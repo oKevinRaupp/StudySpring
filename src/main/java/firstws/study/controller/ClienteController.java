@@ -18,5 +18,4 @@ public class ClienteController {
     public Cliente obterClientePorID2(@RequestParam(name = "id",defaultValue = "1") int id){
         return new Cliente(id,"TesteID2","929-234-234-11");
     }
-
 }
