@@ -15,7 +15,7 @@ public class ClienteController {
         return new Cliente(id,"TesteID","929-234-234-11");
     }
     @GetMapping
-    public Cliente obterClientePorID2(@RequestParam(name = "id") int id){
+    public Cliente obterClientePorID2(@RequestParam(name = "id",defaultValue = "1") int id){
         return new Cliente(id,"TesteID2","929-234-234-11");
     }
 
