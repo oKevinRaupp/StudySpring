@@ -9,4 +9,13 @@ public class FirstController {
     public String Ola(){
         return "Teste";
     }
+
+    @RequestMapping(path = "/ola2")
+    public double saudacao(){
+        return multiplicar(4.5,2.0);
+    }
+
+    public double multiplicar(double x, double y){
+        return x * y;
+    }
 }
