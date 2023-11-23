@@ -1,8 +1,8 @@
 package firstws.study.model.repositories;
 
 import firstws.study.model.entities.Produto;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProdutoRepository extends CrudRepository<Produto,Integer> {
+public interface ProdutoRepository extends JpaRepository<Produto,Integer> {
 
 }
