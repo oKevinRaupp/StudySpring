@@ -34,6 +34,10 @@ public class ProdutoController {
         Pageable page = PageRequest.of(numeroPagina,qtdePagina);
         return produtoRepository.findAll(page);
     }
+    @GetMapping(path = "/nome/{string}")
+    public Iterable<Produto> nomeContem(@PathVariable String string){
+        return produtoRepository.findByNomeContainingIgnoreCase(string);
+    }
     @DeleteMapping(path = "{id}")
     public void excluirProduto(@PathVariable int id){
         produtoRepository.deleteById(id);
@@ -43,5 +47,4 @@ public class ProdutoController {
 //        produtoRepository.save(produto);
 //        return produto;
 //    }
-
 }
