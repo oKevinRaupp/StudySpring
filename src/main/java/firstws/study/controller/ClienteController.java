@@ -1,6 +1,6 @@
 package firstws.study.controller;
 
-import firstws.study.models.Cliente;
+import firstws.study.model.entities.Cliente;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
