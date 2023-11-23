@@ -3,7 +3,7 @@ package firstws.study.model.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "clientes")
+@Table(name = "produtos")
 public class Produto {
     @Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
